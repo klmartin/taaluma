@@ -74,7 +74,7 @@
                 <div class="sidebar-section">
                     <ul class="nav nav-sidebar" data-nav-type="accordion">
                         <li class="nav-item">
-                            <a href="" class="nav-link active">
+                            <a href="{{route('admin')}}" class="nav-link {{ setActive('admin') }}" >
                                 <i class="ph-house"></i>
                                 <span>
                                     Dashboard
@@ -82,7 +82,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('add_job') }}" class="nav-link ">
+                            <a href="{{ route('jobs') }}" class="nav-link {{ setActive('jobs') }}">
                                 <i class="ph-house"></i>
                                 <span>
                                     Jobs
@@ -91,14 +91,23 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('companies') }}" class="nav-link ">
+                            <a href="{{ route('companies') }}" class="nav-link {{ setActive('companies') }}">
                                 <i class="ph-house"></i>
                                 <span>
                                     Companies
                                 </span>
                             </a>
                         </li>
+
+                         <li class="nav-item">
+                            <a href="{{ route('categories') }}" class="nav-link {{ setActive('categories') }}">
+                                <i class="ph-house"></i>
+                                <span>
+                                    Categories
+                                </span>
+                            </a>
                         </li>
+                        
                         <!-- /layout -->
                     </ul>
                 </div>

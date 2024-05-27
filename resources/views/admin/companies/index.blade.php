@@ -52,28 +52,28 @@
                             <div class="row mb-3">
                                 <label class="col-lg-4 col-form-label">Company Name:</label>
                                 <div class="col-lg-8">
-                                    <input name="tittle" type="text" class="form-control">
+                                    <input name="comapny_name" type="text" class="form-control">
                                 </div>
                             </div>
 
                             <div class="row mb-3">
                                 <label class="col-lg-4 col-form-label">Comoany Location:</label>
                                 <div class="col-lg-8">
-                                    <input name="company" type="text" class="form-control">
+                                    <input name="company_location" type="text" class="form-control">
                                 </div>
                             </div>
 
                             <div class="row mb-3">
                                 <label class="col-lg-4 col-form-label">Company Contact:</label>
                                 <div class="col-lg-8">
-                                    <input name="location" type="text" class="form-control">
+                                    <input name="company_contact" type="text" class="form-control">
                                 </div>
                             </div>
 
                             <div class="row mb-3">
                                 <label class="col-lg-4 col-form-label">Company Detail:</label>
                                 <div class="col-lg-8">
-                                    <textarea name="location" type="text" class="form-control">
+                                    <textarea name="company_detail" type="text" class="form-control">
                                         
                                     </textarea> 
                                 </div>

@@ -34,7 +34,6 @@ class JobCategorySeeder extends Seeder
 			'Legal',
 			'Media',
 			'Arts and Entertainment',
-            
         ];
 
         foreach ($categories as $category) {

@@ -10,6 +10,6 @@ class AdminController extends Controller
 
     function adminIndex()
     {
-    	return "";
+    	return view('admin.admin.dashboard');
     }
 }

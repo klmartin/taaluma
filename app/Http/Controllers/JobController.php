@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\JobPost;
+use App\Models\Category;
+
 
 class JobController extends Controller
 {
@@ -44,5 +46,26 @@ class JobController extends Controller
     {
     	$jobs = JobPost::all();
     	return view('website.job_list', compact('jobs'));
+    }
+
+    public function categoryIndex()
+    {
+        $categories = Category::all();
+        return view('admin.jobs.categories', compact('categories'));
+    }
+
+    public function saveCategory(Request $request)
+    {
+        $category = new Category();
+        $category->name = $request->name;
+
+        if($category->save())
+        {
+            return redirect()->back()->with('success', 'Category added successfully!');
+        }
+        else
+        {
+            return redirect()->back()->with('failure', 'Failed to add Category!');
+        }
     }
 }

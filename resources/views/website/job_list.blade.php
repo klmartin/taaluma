@@ -1,8 +1,6 @@
 @extends('website.layout.layout')
 
 @section('content')
-
-
         <!-- Jobs Start -->
         <div class="container-xxl py-5">
             <div class="container">
